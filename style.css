@@ -1,0 +1,28 @@
+.display{
+    margin-bottom: 5px;
+  }
+  
+  .calculator-body{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .left-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .right-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  #equals{
+    width: 100%;
+  }
+  
+  #decimal-point{
+    width: 30%;
+  }
