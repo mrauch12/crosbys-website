@@ -26,3 +26,19 @@
   #decimal-point{
     width: 30%;
   }
+
+  button:hover{
+    font-size:  12px;
+    background-color: aquamarine;
+  }
+
+  .secret{
+    opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.1s ease;
+  }
+
+  .secret-container:hover .secret {
+    opacity: 1;
+    visibility: visible;
+  }
