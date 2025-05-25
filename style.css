@@ -42,3 +42,84 @@
     opacity: 1;
     visibility: visible;
   }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  .day {
+    border: 1px solid #ccc;
+    height: 100px;
+    padding: 5px;
+    border-radius: 20px;
+  }
+  .day-name {
+    background-color: lightgrey;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .calendar-header {
+    margin: 10px auto;
+    position: relative;
+    width: fit-content; /* or a specific width */
+  }
+  
+  #calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .today {
+    background-color: rgba(0, 123, 255, 0.5); /* semi-transparent blue */
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid black; /* solid black border with full opacity */
+  }
+  
+  #month{
+    font-size: 30px;
+    padding: 0px 0px 0px 10px;
+  }
+  
+  #year{
+    font-size: 30px;
+    padding: 0px 10px 0px 5px;
+  }
+  
+  /* Modal base styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  

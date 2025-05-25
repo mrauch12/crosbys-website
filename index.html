@@ -102,6 +102,39 @@
 <p class="secret">I Love Louisa</p>
 </div>
 
+<div class="calendar">
+  <div class="calendar-header">
+    <button id="prev-year">&lt;&lt; Prev. Year</button>
+    <button id="prev-month">&lt; Prev. Month</button>
+    <span id="month"></span>
+    <span id="year"></span>
+    <button id="next-month">Next Month &gt;</button>
+    <button id="next-year">Next Year &gt;&gt;
+    </button>
+    <button id="today">TODAY</button>
+  </div>
+ <div class="calendar-grid">
+<div class="day-name">Sunday</div>
+<div class="day-name">Monday</div>
+<div class="day-name">Tuesday</div>
+<div class="day-name">Wednesday</div>
+<div class="day-name">Thursday</div>
+<div class="day-name">Friday</div>
+<div class="day-name">Saturday</div>
+</div>
+
+<div id="calendar-days" class="calendar-grid"></div>
+  <!-- Event Modal -->
+<div id="event-modal" class="modal">
+<div class="modal-content">
+  <span id="close-modal" class="close">&times;</span>
+  <h2>Add Event for <span id="event-date"></span></h2>
+  <input type="text" id="event-title" placeholder="Event title" />
+  <button id="save-event">Save Event</button>
+</div>
+</div>
+
+
 <script src="script.js"></script>
 
 </body>
